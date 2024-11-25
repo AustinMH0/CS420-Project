@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    scroll-behavior: smooth;
+}
+
+@layer utilities {
+    @keyframes gradientChange {
+        0% {
+            background-position: 50%
+        }
+
+        50% {
+            background-position: 25%
+        }
+
+        100% {
+            background-position: 50%
+        }
+    }
+
+    .gradient {
+        background: linear-gradient(90deg, color1, color2);
+        background-size: 200% 200%;
+    }
+
+    .element-to-rotate {
+        animation: gradientChange 6s ease infinite;
+    }
+}
