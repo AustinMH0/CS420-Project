@@ -29,4 +29,15 @@
     .element-to-rotate {
         animation: gradientChange 6s ease infinite;
     }
+
+    .dropdown-menu {
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .show .dropdown-menu {
+        opacity: 1;
+        transform: translateY(0);
+      }
 }
