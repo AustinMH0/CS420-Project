@@ -3,6 +3,7 @@ import Sidenav from './Components/Sidenav'
 import Main from './Components/Main'
 import FaqDescription from './Components/FaqDescription'
 import Generator from './Components/Generator'
+import Contact from './Components/Contact'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
      <h1 className='text-4xl py-8 font-bold text-center text-[#123524]'>Palindromizer</h1>
       <Generator />
       <FaqDescription />
+      <Contact />
      </div>
     </div>
   )
