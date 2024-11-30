@@ -8,12 +8,12 @@ const Slider = () => {
   };
 
   return (
-    <div id='slider'>
-      <div className='rounded-lg p-6 w-full max-w-md'>
+    <div id='slider' className='pb-4'>
+      {/* <div className='rounded-lg p-6 w-full max-w-md'> */}
         {/* <h2 className='text-2xl font-bold mb-4'>Range Slider</h2> */}
         <div className='mb-2'>
-          <label htmlFor='length-range' className='block text-gray-700 font-bold mb-2'>
-            Palindrome Length
+          <label htmlFor='length-range' className='block text-gray-700 font-bold mb-8'>
+            {/* Palindrome Length */}
           </label>
           <input
             type='range'
@@ -33,7 +33,7 @@ const Slider = () => {
           <span id='maxLength'>16</span>
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 
