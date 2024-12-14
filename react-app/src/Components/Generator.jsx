@@ -20,9 +20,9 @@ const Generator = () => {
                 <GeneratedPalindrome palindrome={nameData?.profile_name || 'Your Palindrome'} />
             </div>
             <div className='container grid gap-4 grid-cols-3 pt-12 px-60 min-w-full justify-center items-center'>
-                <GenerateButton setNameData={setNameData} length={length} />
-                <CopyButton />
-                <RefreshButton />
+            <GenerateButton setNameData={setNameData} length={length} />
+            <CopyButton text={nameData?.profile_name || ''} /> {/* Pass the text to CopyButton */}
+            <RefreshButton />
             </div>
         </div>
     );
