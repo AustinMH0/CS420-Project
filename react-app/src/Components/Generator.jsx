@@ -1,13 +1,13 @@
-import React from 'react'
+import { React, useState, useEffect } from 'react'
 import Slider from './Slider'
 import LengthInput from './LengthInput';
 import GeneratedPalindrome from './GeneratedPalindrome';
-
-import { FaRegCopy } from 'react-icons/fa6';
-import { GiPowerGenerator } from 'react-icons/gi';
-import { LuRefreshCw } from 'react-icons/lu';
+import GenerateButton from './GenerateButton';
+import CopyButton from './CopyButton';
+import RefreshButton from './RefreshButton';
 
 const Generator = () => {
+
   return (
     // <hr className='bg-transparent h-px my-4 border-1 rounded-xl'></hr>
     <div id='generator' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16 rounded-xl bg-green-100'>
@@ -21,18 +21,9 @@ const Generator = () => {
         </div>
 
         <div className='container grid gap-4 grid-cols-3 pt-12 px-60 min-w-full justify-center items-center'>
-            <button className='bg-green-400 hover:bg-green-600 text-slate-800 justify-center font-bold py-2 px-4 rounded inline-flex items-center'>
-                <GiPowerGenerator size={25} className='pr-2 '/>
-                <div>Generate</div>
-            </button>
-            <button className='bg-green-400 hover:bg-green-600 text-slate-800 justify-center font-bold py-2 px-4 rounded inline-flex items-center'>
-                <FaRegCopy size={25} className='pr-2 '/>
-                <div>Copy</div>
-            </button>
-            <button className='bg-green-400 hover:bg-green-600 text-slate-800 justify-center font-bold py-2 px-4 rounded inline-flex items-center'>
-                <LuRefreshCw size={25} className='pr-2 '/>
-                <div>Refresh</div>
-            </button>
+            <GenerateButton />
+            <CopyButton />
+            <RefreshButton />
         </div>
     </div>
     

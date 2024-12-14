@@ -1,11 +1,16 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import Sidenav from './Components/Sidenav'
 import Main from './Components/Main'
 import FaqDescription from './Components/FaqDescription'
 import Generator from './Components/Generator'
 import Contact from './Components/Contact'
+import axios from 'axios'
 
 function App() {
+
+  const [nameData, setNameData] = useState(null)
+
+
   return (
     <div>
      <Sidenav />
